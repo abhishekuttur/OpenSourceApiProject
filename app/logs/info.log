@@ -1,0 +1,158 @@
+[2024-05-21 22:08:33,339] {C:\Users\User\Desktop\My_project\app\app.py:log_exception 35} ERROR - Unhandled Exception: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\new.py", line 54, in process_this_prompt
+    convo.send_message(prompt)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 483, in send_message
+    self._check_response(response=response, stream=stream)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 510, in _check_response
+    raise generation_types.StopCandidateException(response.candidates[0])
+google.generativeai.types.generation_types.StopCandidateException: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+
+[2024-05-21 22:09:34,551] {C:\Users\User\Desktop\My_project\app\new.py:process_this_prompt 56} INFO - D A T A >>>>>>>>>>>```json
+{
+  "Step1": [
+    {
+      "Attack_id": "A1",
+      "Level": "1",
+      "Title": "Denial-of-Service (DoS): Flooding the CAN bus with messages to disrupt communication between ECUs."
+    },
+    {
+      "Attack_id": "A2",
+      "Level": "1",
+      "Title": "Spoofing: Injecting fake messages onto the CAN bus to impersonate legitimate ECUs."
+    },
+    {
+      "Attack_id": "A3",
+      "Level": "1",
+      "Title": "Fuzzing: Sending malformed or unexpected data to ECUs to trigger vulnerabilities."
+    },
+    {
+      "Attack_id": "A4",
+      "Level": "1",
+      "Title": "Reverse Engineering: Analyzing the CAN bus protocol and ECU firmware to understand their functionality and identify weaknesses."
+    },
+    {
+      "Attack_id": "A5",
+      "Level": "1",
+      "Title": "Man-in-the-Middle (MitM): Intercepting and manipulating communication between ECUs."
+    }
+  ],
+  "Step2": [
+    {
+      "Sub_Attack_id": "A1-1",
+      "Level": "2",
+      "Title": "High-rate message transmission: Flooding the bus with messages at a very high rate."
+    },
+    {
+      "Sub_Attack_id": "A1-2",
+      "Level": "2",
+      "Title": "Targeted message flooding: Flooding the bus with messages specifically targeting a particular ECU or function."
+    },
+    {
+      "Sub_Attack_id": "A1-3",
+      "Level": "2",
+      "Title": "Error frame injection: Injecting error frames onto the bus to disrupt communication."
+    },
+    {
+      "Sub_Attack_id": "A2-1",
+      "Level": "2",
+      "Title": "Sensor spoofing: Injecting fake sensor data to mislead ECUs."
+    },
+    {
+      "Sub_Attack_id": "A2-2",
+      "Level": "2",
+      "Title": "ECU impersonation: Sending messages with spoofed ECU IDs to gain control of specific functions."
+    },
+    {
+      "Sub_Attack_id": "A2-3",
+      "Level": "2",
+      "Title": "Priority spoofing: Sending messages with high priority to override legitimate messages."
+    },
+    {
+      "Sub_Attack_id": "A3-1",
+      "Level": "2",
+      "Title": "Invalid data injection: Sending messages with data outside the expected range or format."
+    },
+    {
+      "Sub_Attack_id": "A3-2",
+      "Level": "2",
+      "Title": "Unexpected message sequences: Sending messages in an unexpected order or with unexpected timing."
+    },
+    {
+      "Sub_Attack_id": "A3-3",
+      "Level": "2",
+      "Title": "Malformed message structures: Sending messages with corrupted headers or payloads."
+    },
+    {
+      "Sub_Attack_id": "A4-1",
+      "Level": "2",
+      "Title": "Protocol analysis: Analyzing the CAN bus protocol to understand its structure and communication patterns."
+    },
+    {
+      "Sub_Attack_id": "A4-2",
+      "Level": "2",
+      "Title": "Firmware extraction: Extracting and analyzing ECU firmware to understand its functionality and identify vulnerabilities."
+    },
+    {
+      "Sub_Attack_id": "A4-3",
+      "Level": "2",
+      "Title": "Message decoding: Decoding CAN bus messages to understand their meaning and purpose."
+    },
+    {
+      "Sub_Attack_id": "A5-1",
+      "Level": "2",
+      "Title": "Eavesdropping: Passively listening to CAN bus communication to gather information."
+    },
+    {
+      "Sub_Attack_id": "A5-2",
+      "Level": "2",
+      "Title": "Message modification: Intercepting and modifying messages to alter their content."
+    },
+    {
+      "Sub_Attack_id": "A5-3",
+      "Level": "2",
+      "Title": "Replay attacks: Capturing and replaying legitimate messages to trigger specific actions."
+    }
+  ]
+}
+```

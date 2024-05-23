@@ -1,0 +1,102 @@
+2024-05-21 22:06:19,384 ERROR: Unhandled Exception: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+ [in C:\Users\User\Desktop\My_project\app\app.py:35]
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\new.py", line 54, in process_this_prompt
+    convo.send_message(prompt)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 483, in send_message
+    self._check_response(response=response, stream=stream)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 510, in _check_response
+    raise generation_types.StopCandidateException(response.candidates[0])
+google.generativeai.types.generation_types.StopCandidateException: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+
+2024-05-21 22:08:33,339 ERROR: Unhandled Exception: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+ [in C:\Users\User\Desktop\My_project\app\app.py:35]
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\My_project\app\new.py", line 54, in process_this_prompt
+    convo.send_message(prompt)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 483, in send_message
+    self._check_response(response=response, stream=stream)
+  File "C:\Users\User\Desktop\My_project\app\venv\Lib\site-packages\google\generativeai\generative_models.py", line 510, in _check_response
+    raise generation_types.StopCandidateException(response.candidates[0])
+google.generativeai.types.generation_types.StopCandidateException: index: 0
+finish_reason: SAFETY
+safety_ratings {
+  category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HATE_SPEECH
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_HARASSMENT
+  probability: NEGLIGIBLE
+}
+safety_ratings {
+  category: HARM_CATEGORY_DANGEROUS_CONTENT
+  probability: MEDIUM
+}
+
