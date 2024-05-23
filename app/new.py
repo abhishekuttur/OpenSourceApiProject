@@ -6,7 +6,6 @@ import json
 import google.generativeai as genai
 from app import create_app
 
-
 # app = Flask(__name__)
 app=create_app()
 # CORS(app)
